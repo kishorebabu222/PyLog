@@ -1,4 +1,5 @@
 import cx_Oracle
+import time
 
 def ora_conn():
    conn_str = 'scott/power@orcl'
@@ -11,7 +12,7 @@ def ora_conn():
    for i in curr:
       print(i)
 
-   conn.close()
+#conn.close()
 
 if __name__ == "__main__":
    ora_conn()
